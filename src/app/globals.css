@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+The below `--background` and `--foreground` CSS custom properties will be used if the user chooses `light` mode. If the user chooses `dark` mode, the values will be swapped. 
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #E5E5E7; /* Light Gray Background */
+  --foreground: #1B1B1D; /* Dark Text */
+  --primary-accent: #FF4500; /* Crimson Orange */
+  --secondary-accent: #FFA500; /* Warm Amber Highlight */
+  --neutral-border: #5A5A5D; /* Muted Steel Gray */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1B1B1D; /* Dark Background */
+    --foreground: #E5E5E7; /* Light Gray Text */
   }
 }
 
